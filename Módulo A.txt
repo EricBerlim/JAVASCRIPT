@@ -1,6 +1,6 @@
--------------------------------------------------------------
+------------------------------------------------------
 MÓDULO A - JAVASCRIPT:
--------------------------------------------------------------
+------------------------------------------------------
 
 É uma linguagem de programação que funciona juntamente com o as ferramentas HTML e CSS.
 
@@ -16,7 +16,7 @@ Na página inicial do Google você pode ir em Inspecionar e depois na aba Consol
 Da mesma forma, para mudar a cor de fundo da página pode-se digitar document.body.style.background = 'black'
 
 Agora para fazer a logo ficar em preto e branco deve-se digitar document.querySelector('img#hplogo').style.filter = 'grayscale(100%)'
--------------------------------------------------------------
+------------------------------------------------------
 
 Exemplo para "alterar" título da reportagem com JS:
 
@@ -25,4 +25,4 @@ Inspecionar -> Seta no canto superior esquerdo -> Digitar:
 document.querySelector('span.bstn-hl-title').innerText = 'Texto que você quiser'
 
 ...
--------------------------------------------------------------
+------------------------------------------------------
