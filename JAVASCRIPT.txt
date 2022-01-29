@@ -1,0 +1,116 @@
+-----------------------------------------------------
+JAVASCRIPT:
+-----------------------------------------------------
+
+Linguagem de programação criada por Brandon, um funcionário da Netscape, e que funciona mais no lado do cliente, juntamente com o HTML e o CSS.
+
+Um site é composto por 3 tecnologias:
+
+- HTML: texto e conteúdo
+- CSS: design e estilo
+- JavaScript: interação e engenharia
+
+O JS realiza interações como:
+
+- ao deixar o mouse em cima, aparece uma mensagem
+- aumentar uma imagem e escurecer o resto do site
+- colocar o site em tema escuro ou claro
+- ajuda na barra de pesquisa
+
+Sites que utilizam JavaScript:
+
+-Google
+-Youtube
+-LinkedIn
+-Netflix
+-----------------------------------------------------
+
+HISTÓRIA:
+
+1993 - Genebra - Suíça, Tim Bernes Lee criou a linguagem HTML, o protocolo http e fundou a WWW.
+
+Nos EUA surgiu o primeiro navegador criado por Marc Andersen conhecido como Mozaic.
+
+1994 - Marc se uniu ao empresário Jim Clark e criou um novo navegador chamado de Netscape.
+
+1995 - Brandon, ex-funcionário da empresa de Jim, foi para a Netscape e criou a linguagem Mocha que, com o sucesso da linguagem Java, seu nome foi alterado de Mocha para JavaScript.
+
+1997 - Netscape decidiu padronizar a linguagem JavaScript junto a empresa de padronização ECMA (associação européia de fabricantes de pc's), sugindo então a linguagem ECMAScript.
+
+2002 - Netscape faliu, mas seus funcionários criaram a fundação Mozilla e o navegador Firefox.
+
+2008 - Surgiu o Google Chrome, que em 2 anos tornou-se o 3 maior e hoje tem 50% do mercado.
+
+2010 - Criou-se o NodeJS, que é uma máquina que roda JavaScript fora do navegador.
+-----------------------------------------------------
+
+TECNOLOGIAS que usam JAVASCRIPT:
+
+- jQuery: conjunto de bibliotecas
+- Angular - Google: para aplicações web
+- React - Facebook: aplicações web e mais
+- Vue - ex-Google: aplicações web e mais
+- Ionic: criar app's para dispositivos móveis
+- Electron - GitHub: interfaces gráficas
+
+Programas feitos em Electron:
+
+- VS Code
+- Discord
+- Slack
+- WhatsApp Desktop
+
+TECNOLOGIAS JAVASCRIPT PARA JOGOS:
+
+- Phaser
+- PixiJS
+- Impact
+- Melon.js
+- CraftyJS
+-----------------------------------------------------
+
+O QUE O JS PODE FAZER:
+
+Desabilitar o JS:
+Inspecionar -> Opções -> Preferences -> Disable JS
+
+INSPECIONAR + CONSOLE:
+
+Exibir mensagem de alerta:
+alert('Olá, mundo!')
+
+Mudar a cor de fundo: document.body.style.background = 'black'
+
+Logo em preto e branco: clicar na seta e ver o nome:
+document.querySelector('img#logo').style.filter = "grayscale(100%)"
+
+Alterar texto de reportagem:
+
+document.querySelector('span.bstn-hl-title').innerText = 'Novo texto'
+-----------------------------------------------------
+
+PRIMEIRO CÓDIGO:
+
+<title>Primeiro programa...</title>
+    <style>
+        body {
+            background-color: rgb(90, 110, 224);
+            color: white;
+            font: normal 20pt Arial;
+        }
+        h1 {
+            color: rgb(160, 230, 30)   ;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, mundo!</h1>
+    <p>Já me livrei da maldição!</p>
+    
+    <script>
+        window.alert('Minha primeira mensagem!')
+        window.confirm('Está gostando de JS?')
+        window.prompt('Qual é o seu nome?')
+    </script>
+</body>
+-----------------------------------------------------
