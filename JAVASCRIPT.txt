@@ -114,3 +114,107 @@ PRIMEIRO CÓDIGO:
     </script>
 </body>
 -----------------------------------------------------
+
+VARIÁVEIS:
+
+- Podem iniciar com uma letra, um $ ou _
+
+- Não podem iniciar com números
+
+- Pode usar acentos e símbolos
+
+- Não pode conter espaços
+
+Existem 3 formas de delimitar uma String em JS:
+
+Aspas duplas: "JavaScript" - string
+Apóstrofo: 'Curso' - string
+Crase: `Guanabara` - usada para ${}
+-----------------------------------------------------
+
+TIPOS PRIMITIVOS:
+
+- Number: Infinity e NaN
+- String
+- Boolean
+- Null
+- Undefined
+- Object: Array
+- Function
+
+O comando TYPEOF no NodeJS mostra o tipo da variável.
+-----------------------------------------------------
+
+MANIPULAÇÃO de DADOS:
+
+Janela pergunta o nome e atribui na variável:
+var nome = window.prompt('Qual o seu nome?')
+
+Mensagem de saudação com concatenação:
+window.alert('Prazer em te conhecer, ' + nome + '!')
+-----------------------------------------------------
+
+CONVERSÃO:
+
+O sinal + pode ser usado de 2 formas:
+
+- Adição: number + number
+- Concatenar: string + string
+
+O window.prompt(...) retorna uma String.
+
+var n1 = window.prompt('Digite um número: ')
+
+Deve-se converter o n1 de string para número.
+
+Formas de converter:
+
+- Number.parseInt(n): número para inteiro 
+- Number.parseFloat(n): número com vírgula 
+
+var n1 = Number(window.prompt('Número: '))
+
+O NUMBER(n) faz de forma AUTOMÁTICA:
+var n2 = Number(window.prompt('Digite um número: '))
+
+Número para String:
+STRING(o que quero converter)
+
+var soma = n1 + n2
+window.alert('Soma = ' + String(soma))
+-----------------------------------------------------
+
+FORMATANDO STRINGS - TEMPLATE STRING:
+
+Concatenação: 'Eu estou estudando ' + s
+
+Template String: `Eu estou estudando ${s}`
+
+window.alert(`A soma entre ${n1} e ${n2} é igual a ${soma}`)
+
+s.Length: informa o tamanho da string:
+
+var nome = window.prompt('Qual o seu nome?')
+document.write(`Seu nome tem ${nome.length} letras!`)
+
+s.toUpperCase(): letras maiúsculas
+s.toLowerCase(): letras minúsculas
+
+n1.toFixed(2): mostra 2 casas após a vírgula:
+
+var n1 = 1540.5
+n1.toFixed(2)
+'1540.50'
+
+REPLACE: troca um por outro:
+
+n1.toFixed(2).replace('.' , ',')
+
+Aqui trocou o ponto pela vírgula.
+
+LOCALE:
+
+n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+
+Faz com que o valor de n1 apareça após um R$.
+-----------------------------------------------------
