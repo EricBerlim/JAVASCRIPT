@@ -7,8 +7,8 @@
     <title>DOM</title>
     <style>
         body{
-            background-color: rgb(57, 130, 226);
-            color: black;
+            background-color: rgb(22, 112, 230);
+            color: white;
             font: normal 14pt Arial;
         }
     </style>
@@ -16,11 +16,25 @@
 <body>
     <h1>Primeiros passos com DOM</h1>
     <p>Aqui vai o resultado!</p>
-    <p>Aprendendo a usar <strong>DOM</strong> em JS.</p>
-    <div>Clique aqui!</div>
+    <p>Usando <strong>DOM</strong> em JS.</p>
+    <div id="msg">Clique aqui!</div>
 
     <script>
+        var p1 = document.getElementsByTagName('p')[1]
+        var corpo = document.body
         
+        /*var d = document.getElementById('msg')
+        d.style.background = 'black'
+        d.innerText = 'Estou aguardando...'*/
+
+        /*var d = document.getElementsByName('msg')[0]
+        d.innerText = 'Olá!'*/
+
+        /*var d = document.getElementsByClassName('msg')[0]
+        d.innerText = 'Olá!'*/
+
+        var d = document.querySelector('div#msg')
+        d.style.background = 'grey'
     </script>
 </body>
 </html>

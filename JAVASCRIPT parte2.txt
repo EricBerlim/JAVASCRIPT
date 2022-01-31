@@ -129,6 +129,113 @@ DOM - Document Object Model:
 
 ÁRVORE DOM:
 
+Começa na raiz e tudo dentro do JavaScript está dentro de um objeto chamado window.
+
+Dentro do window existem vários OBJETOS:
+
+- location: local do site, url, página atual
+
+- document: documento atual
+
+- history: guarda de onde veio e pra onde vai
+
+Dentro de document -> html
+
+Dentro de html -> head e body
+
+Dentro de head -> meta, title
+
+Dentro de body -> h1, p, p, div
+
+Dentro de p -> strong
+
+<body>
+    <h1>Primeiros passos com DOM</h1>
+    <p>Aqui vai o resultado!</p>
+    <p>Usando <strong>DOM</strong> em JS.</p>
+    <div>Clique aqui!</div>
+
+	<script>
+	window.document.write(window.navigator.appName)
+	</script>
+</body>
+
+Console -> Netscape
+
+-----------------------------------------------------
+MÉTODOS para ACESSAR ELEMENTOS - por:
+
+- Marca: tag
+- ID
+- Name
+- Class
+- Selector: CSS
+
+-----------------------------------------------------
+MARCA: getElementByTagName()[]: mais de 1 objeto
+
+Para selecionar o primeiro parágrafo que aparece:
+var p1 = document.getElementsByTagName('p')[0]
+
+Modificações com JS:
+
+var p1 = document.getElementsByTagName('p')[0]
+document.write('Está escrito: ' + p1.innerText)
+
+var p1 = document.getElementsByTagName('p')[0]
+p1.style.color = 'purple'
+
+var corpo = document.body
+corpo.style.background = 'black'
+
+INNER TEXT: somente o texto:
+document.write(p1.innerText)
+
+INNER HTML: texto formatado:
+document.write(p1.innerHTML)
+
+-----------------------------------------------------
+ID: getElementById(): para 1 objeto
+
+<div id="msg">Clique aqui!</div>
+
+var d = document.getElementById('msg')
+d.style.background = 'black'
+d.innerText = 'Estou aguardando...'
+
+-----------------------------------------------------
+NAME: getElementsByName()[]: mais de 1 objeto
+
+<div name="msg">Clique aqui!</div>
+
+var d = document.getElementsByName('msg')[0]
+d.innerText = 'Olá!'
+
+-----------------------------------------------------
+CLASSE: getElementsByClassName()[]: mais de 1 objeto
+
+<div class="msg">Clique aqui!</div>
+
+var d = document.getElementsByClassName('msg')[0]
+d.innerText = 'Oi!'
+
+-----------------------------------------------------
+SELETOR: querySelector() | querySelectorAll():
+
+ID: <div id="msg">Clique aqui!</div>
+
+var d = document.querySelector('div#msg') 
+d.style.background = 'grey'
+
+CLASS: <div class="msg">Clique aqui!</div>
+
+var d = document.querySelector('div.msg') 
+d.style.background = 'grey'
+
+-----------------------------------------------------
+
+
+
 
 
 -----------------------------------------------------
