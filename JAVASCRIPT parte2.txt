@@ -8,7 +8,7 @@ OPERADORES:
 - Atribuição
 - Relacionais
 - Lógicos
-- Ternários
+- Ternário
 
 OPERADORES ARITMÉTICOS:
 
@@ -20,8 +20,9 @@ OPERADORES ARITMÉTICOS:
 
 ORDEM de PRECEDÊNCIA:
 
-() -> ** -> * / % -> + -
+()  ->  **  ->  * / %  ->  + -
 
+-----------------------------------------------------
 OPERADORES de ATRIBUÇÃO
 
 var a = 5 + 3 -> 8
@@ -31,7 +32,7 @@ var d = 10 - a / 2 -> 6
 var e = 6 * 2 / d -> 2
 var f = b % e + 4 / e -> 3
 
-AUTO-ATRIBUIÇÕES:
+Auto-atribuições:
 
 var n = 3
 n = n + 4 -> 7 | n += 4 -> 7
@@ -42,10 +43,91 @@ num += 2 -> 10
 num %= 2 -> 0
 num **= 2 -> 9
 
+-----------------------------------------------------
 OPERADORES de INCREMENTO:
 
 x = x + 1 | x += 1 | x++
 
 x = x - 1 | x -+ 1 | x--
+
+-----------------------------------------------------
+OPERADORES RELACIONAIS:
+
+>= maior ou igual
+<= menor ou igual
+== igual
+!= diferente
+
+8 >= 8 = true
+9 <= 7 -> false
+5 == 5 -> true
+4 != 4 -> false
+
+ORDEM: Aritméticos -> Relacionais
+
+-----------------------------------------------------
+OPERADORES de IDENTIDADE:
+
+5 == 5 -> true
+
+Abaixo, apesar de ser string, só analisa número:
+
+5 == '5' -> true
+
+Operador de identidade restrita analisa se é idêntico, ou seja, mesmo valor e tipo:
+
+5 === '5' -> false
+5 === 5 -> true
+
+-----------------------------------------------------
+OPERADORES LÓGICOS:
+
+! -> negação
+&& -> e
+|| -> ou
+
+true  || true -> true
+true  || false -> true
+false || true -> true
+false || false -> false
+
+Exemplos:
+
+idade >= 15 && idade <= 18 //idade entre 15 e 18
+
+estado == 'RJ' || estado == 'SP' //estado é RJ ou SP
+
+salário > 1500 && sexo != 'M' //acima de 1500 e ñ M
+
+ORDEM: Aritméticos -> Relacionais -> Lógicos
+
+()  ->  **  ->  * / %  ->  + -
+>  <  >=  ==  !=
+!  ->  &&  -> ||
+
+-----------------------------------------------------
+OPERADOR TERNÁRIO:
+
+Composto por ? e : dentro de 3 blocos:
+
+teste  ?  true  :  false
+
+média >= 7.0 ? 'Aprovado' : 'Reprovado'
+
+Exemplos:
+
+var média = 5.5
+média > 7 ? 'Aprovado' : 'Reprovado' -> 'Reprovado'
+
+var x = 8
+var res = x % 2 == 0 ? 5 : 9
+x -> 8
+res -> 5
+
+-----------------------------------------------------
+DOM - Document Object Model:
+
+
+
 -----------------------------------------------------
 
