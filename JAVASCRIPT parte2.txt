@@ -1,0 +1,51 @@
+-----------------------------------------------------
+JAVASCRIPT:
+-----------------------------------------------------
+
+OPERADORES:
+
+- Ariméticos
+- Atribuição
+- Relacionais
+- Lógicos
+- Ternários
+
+OPERADORES ARITMÉTICOS:
+
+5 / 2 -> 2.5 -> divisão real
+
+5 % 2 -> 1 -> resto da divisão inteira
+
+5 ** 2 -> 25 -> potênciação
+
+ORDEM de PRECEDÊNCIA:
+
+() -> ** -> * / % -> + -
+
+OPERADORES de ATRIBUÇÃO
+
+var a = 5 + 3 -> 8
+var b = a % 5 -> 3
+var c = 5 * b ** 2 -> 45
+var d = 10 - a / 2 -> 6
+var e = 6 * 2 / d -> 2
+var f = b % e + 4 / e -> 3
+
+AUTO-ATRIBUIÇÕES:
+
+var n = 3
+n = n + 4 -> 7 | n += 4 -> 7
+n = n - 5 -> 2
+
+var num = 8
+num += 2 -> 10
+num %= 2 -> 0
+num **= 2 -> 9
+
+OPERADORES de INCREMENTO:
+
+x = x + 1 | x += 1 | x++
+
+x = x - 1 | x -+ 1 | x--
+-----------------------------------------------------
+
