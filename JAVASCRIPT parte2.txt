@@ -233,10 +233,130 @@ var d = document.querySelector('div.msg')
 d.style.background = 'grey'
 
 -----------------------------------------------------
+EVENTOS DOM:
 
+É tudo aquilo que pode ocorrer com um elemento.
+Os eventos de mouse são os mais comuns.
 
+Entrada do mouse na area do elemento: mouseenter
 
+Mover o mouse dentro do elemento: mousemove
 
+Clicar e segurar: mousedown
+
+Soltar o mouse: mouseup
+
+Clique normal: click
+
+Saída do mouse da área do elemento: mouseout
+
+Eventos podem ser configurados na parte HTML ou diretamente no JAVASCRIPT.
+
+-----------------------------------------------------
+FUNCTION:
+
+Conjunto de linhas de código que vão ser executadas somente quando um evento ocorrer.
+
+Para que o evento ocorra, deve-se colocar o bloco de código dentro de uma function, nomeando-a.
+
+Ao lado, deve-se inserir o nome da ação, seguida de parênteses, que devem conter parrâmetros.
+
+function ação(param){
+	
+	ação ao clicar
+}
+
+Disparar eventos pelo HTML:
+
+<div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+    Interaja!
+</div>
+
+<script>
+    var a = document.getElementById('area')
+
+    function clicar(){
+        a.innerText = 'Clicou!'
+        a.style.background = 'black'
+    }
+    function entrar(){
+        a.innerText = 'Entrou!'
+        a.style.background = 'darkblue'
+    }
+    function sair(){
+        a.innerText = 'Saiu!'
+        a.style.background = 'darkred'
+    }
+</script>
+
+-----------------------------------------------------
+Disparar eventos pelo JAVASCRIPT:
+
+<div id="area">
+    Interaja!
+</div>
+
+<script>
+    var a = document.getElementById('area')
+	
+	a.addEventListener('click', clicar)
+    a.addEventListener('mouseenter', entrar)
+    a.addEventListener('mouseout', sair)
+	
+    function clicar(){
+        a.innerText = 'Clicou!'
+        a.style.background = 'black'
+    }
+    function entrar(){
+        a.innerText = 'Entrou!'
+        a.style.background = 'darkblue'
+    }
+    function sair(){
+        a.innerText = 'Saiu!'
+        a.style.background = 'darkred'
+    }
+</script>
+-----------------------------------------------------
+
+<title>Somando Números</title>
+    <style>
+        body{
+            font: normal 18pt Arial;
+        }
+        input{
+            font: normal 18pt Arial;
+            width: 100px;
+        }
+        div#res{
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Somando valores</h1>
+    <input type="number" name="txtn1" id="txtn1"> +
+    <input type="number" name="txtn2" id="txtn2">
+    <input type="button" value="Somar" onclick="somar()">
+
+    <div id="res">Resultado</div>
+
+    <script>
+        function somar() {
+            var tn1 = document.getElementById('txtn1')
+            var tn2 = document.getElementById('txtn2')
+            var res = document.getElementById('res')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var s = n1 + n2
+            
+            res.innerHTML = `A soma entre ${n1} e ${n2} é igual a <strong>${s}</strong>`
+        }
+    </script>
+</body>
+
+DESCOBRIR ERROS:
+
+Inspecionar página -> Canto superior direito
 
 -----------------------------------------------------
 
