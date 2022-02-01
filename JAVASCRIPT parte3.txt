@@ -49,8 +49,120 @@ switch (expressão) {
         break;
 
     default:
+	
         break;
 }
+
+Dentro de cada bloco é preciso inserir um break.
+
+var agora = new Date()
+var diaSemana = agora.getDay()
+
+/*
+0 - Domingo
+1 - Segunda
+2 - Terça
+3 - Quarta
+4 - Quinta
+5 - Sexta
+6 - Sábado
+*/
+
+switch (diaSemana) {
+    case 0:
+        console.log('Domingo')
+        break;
+		
+    case 1:
+        console.log('Segunda')
+        break;
+		
+    case 2:
+        console.log('Terça')
+        break;
+		
+    case 3:
+        console.log('Quarta')
+        break;
+		
+    case 4:
+        console.log('Quinta')
+        break;
+		
+    case 5:
+        console.log('Sexta')
+        break;
+		
+    case 6:
+        console.log('Sábado')
+        break;
+		
+
+    default:
+        console.log('ERRO! Dia inválido!')
+}
+
+-----------------------------------------------------
+
+MODELO PRÁTICO:
+
+	HTML:
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Título</h1>
+    </header>
+
+    <section>
+        <div>            
+            Testando...
+        </div>
+        <div>            
+            Som...
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; CursoemVideo</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+	CSS:
+body{
+    background: rgb(70, 140, 210);
+    font: normal 15pt Arial;
+}
+
+header{
+    color: white;
+    text-align: center;
+}
+
+section{
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.342);
+}
+
+footer{
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+
+	JAVASCRIPT:
+alert('Bem vindo(a)!')
 
 
 -----------------------------------------------------
