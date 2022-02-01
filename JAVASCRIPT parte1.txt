@@ -1,5 +1,5 @@
 -----------------------------------------------------
-JAVASCRIPT:
+JAVASCRIPT - PARTE 1
 -----------------------------------------------------
 
 Linguagem de programação criada por Brandon, um funcionário da Netscape, e que funciona mais no lado do cliente, juntamente com o HTML e o CSS.

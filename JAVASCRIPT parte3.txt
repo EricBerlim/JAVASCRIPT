@@ -1,8 +1,10 @@
 -----------------------------------------------------
-JAVASCRIPT:
+JAVASCRIPT - PARTE 3
 -----------------------------------------------------
 
 CONDIÇÕES:
+
+Serve para valores true ou false.
 
 if(condição){
 	true
@@ -12,6 +14,43 @@ if(condição){
 	
 }
 
+var hora = 12
+console.log(`Agora são ${hora} horas!`)
+
+if (hora < 12) {
+    console.log('Bom dia!')
+
+} else if (hora <= 18) {
+    console.log('Boa tarde!')
+
+}  else {
+    console.log('Boa noite!')
+}
+
+-----------------------------------------------------
+INSERIR HORA ATUAL:
+
+var agora = new Date()
+var hora = agora.getHours()
+
+console.log(`Agora são ${hora} horas!`)
+
+-----------------------------------------------------
+CONDIÇÃO MÚLTIPLA:
+
+Serve para valores fixos.
+
+switch (expressão) {
+    case value1:
+        
+        break;
+    case value2:
+        
+        break;
+
+    default:
+        break;
+}
 
 
 -----------------------------------------------------
