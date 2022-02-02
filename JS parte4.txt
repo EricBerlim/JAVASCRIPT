@@ -1,0 +1,48 @@
+-----------------------------------------------------
+JAVASCRIPT - PARTE 4
+-----------------------------------------------------
+
+ESTRUTURAS de REPETIÇÃO:
+
+WHILE - teste lógico no início
+Enquanto a condição for true, executa:
+
+while (condição) {
+	
+	comando true
+}
+
+Se for false, sai do laço.
+
+Exemplo:
+
+function comerPizza() {
+
+	while(temFatia()){
+	
+		comerFatia()
+	}	
+}
+
+DO - teste lógico no final
+Faça isso, enquanto a condição for true:
+
+do {
+
+} while (condição)
+
+
+
+
+
+
+
+
+-----------------------------------------------------
+
+
+
+
+
+
+-----------------------------------------------------
