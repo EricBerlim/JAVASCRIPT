@@ -106,36 +106,36 @@ switch (diaSemana) {
 
 MODELO PRÁTICO:
 
-	HTML:
+		HTML:
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modelo</title>
+    <title>Hora do Dia</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload="carregar()">
     <header>
-        <h1>Título</h1>
+        <h1>Hora do Dia</h1>
     </header>
 
     <section>
-        <div>            
-            Testando...
+        <div id="msg">
+            Mensagem...
         </div>
-        <div>            
-            Som...
+        <div id="foto">
+            <img id="imagem" src="manha.png" alt="Dia">
         </div>
     </section>
     
     <footer>
-        <p>&copy; CursoemVideo</p>
+        <p>&copy;</p>
     </footer>
 
     <script src="script.js"></script>
 </body>
 
-	CSS:
+		CSS:
 body{
     background: rgb(70, 140, 210);
     font: normal 15pt Arial;
@@ -155,14 +155,43 @@ section{
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.342);
 }
 
+div{
+    text-align: center;
+    padding: 8px;
+}
+
 footer{
     color: white;
     text-align: center;
     font-style: italic;
 }
 
-	JAVASCRIPT:
-alert('Bem vindo(a)!')
+		JAVASCRIPT:
+function carregar() {
+    var msg = document.getElementById('msg')
+    var img = document.getElementById('imagem')
+    var data = new Date()
+    var hora = 11 //selecionar horário
+    //var hora = data.getHours() //hora atual
+    
+    msg.innerHTML = `Agora são ${hora} horas.`
+
+    if (hora >= 0 && hora < 12) {
+        //Bom dia!
+        img.src = 'manha.png'
+        document.body.style.background = '#e2cd9f'
+
+    } else if (hora >= 12 && hora <= 18) {
+        //Boa tarde!
+        img.src = 'tarde.png'
+        document.body.style.background = '#b9846f'
+
+    } else {
+        //Boa noite!
+        img.src = 'noite.png'
+        document.body.style.background = '#515154'
+    }
+}
 
 
 -----------------------------------------------------

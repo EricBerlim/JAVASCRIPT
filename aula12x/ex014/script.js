@@ -2,7 +2,8 @@ function carregar() {
     var msg = document.getElementById('msg')
     var img = document.getElementById('imagem')
     var data = new Date()
-    var hora = 2 //var hora = data.getHours()
+    var hora = 11 //selecionar horário
+    //var hora = data.getHours() //hora atual
     
     msg.innerHTML = `Agora são ${hora} horas.`
 
