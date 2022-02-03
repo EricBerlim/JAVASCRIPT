@@ -269,7 +269,79 @@ Toda função pode ter:
 - Ação
 - Retorno
 
+A ação não é executada automaticamente.
 
+function ação(param){
 
+	código
+	return res
+}
+
+ação(5)
+
+O código 'ação(5)' é a chamada da function e o valor entre parênteses será o parâmetro.
+
+O retorno 'return res' faz voltar para a chamada que está fora do bloco de código.
+
+function ParImp(n){
+
+	if (n % 2 == 0){
+		return 'par'
+	
+	} else {
+		return 'ímpar'
+	}
+}
+
+console.log(ParImpar(4))
+
+Nesse caso a palavra 'ímpar' vai para dentro de 'res'
+
+Exemplo:
+
+function soma(n1=0, n2=0) {
+    return n1 + n2    
+}
+
+console.log(soma(7))
+
+Caso não sejam passados 2 parâmetros, será 0.
+
+Function dentro de Variável:
+
+let v = function (x) {
+    return x*2
+}
+
+console.log(v(5))
+
+Function para saber Fatorial:
+
+function fatorial(n) {
+    let fat = 1
+
+    for (let c = n; c > 1; c--){
+        fat *= c
+    }
+    return fat   
+}
+
+console.log(fatorial(5))
+
+-----------------------------------------------------
+RECURSIVIDADE:
+
+Quando uma function chama ela mesma.
+
+function fatorial(n) {
+    if (n == 1) {
+        return 1
+
+    } else {
+        return n * fatorial(n - 1)
+    }
+}
+
+console.log(fatorial(5))
 
 -----------------------------------------------------
