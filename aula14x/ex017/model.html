@@ -7,32 +7,28 @@
     <title>Verificador de Idade</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body onload="carregar()">
+<body onload="calcular()">
     <header>
-        <h1>Verificador de Idade</h1>
+        <h1>Vamos contar</h1>
     </header>
 
     <section>
         <div>
-            <p>Ano de nascimento: 
-                <input type="number" name="ano" id="ano" min="0">
+            <p>Início: 
+                <input type="number" name="number" id="inicio">
             </p>
-            <p>Sexo: 
-                <input type="radio" name="radSex" id="mas">
-                <label for="mas">Masculino</label>
-                
-                <input type="radio" name="radSex" id="fem" checked>
-                <label for="fem">Feminino</label>
-                
-                <input type="radio" name="radSex" id="out">
-                <label for="out">Outro</label>
+            <p>Fim: 
+                <input type="number" name="number" id="fim">
+            </p>
+            <p>Passo:
+                <input type="number" name="number" id="passo">
             </p>
             <p>
-                <input type="button" value="Verificar" onclick="verificar()">
+                <input type="button" value="Contar" onclick="contar()">
             </p>
         </div>
         <div id="res">
-            Preencha os dados acima para verificar o resultado!
+            Preparando a contagem...
         </div>
     </section>
     

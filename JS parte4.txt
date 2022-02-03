@@ -4,7 +4,8 @@ JAVASCRIPT - PARTE 4
 
 ESTRUTURAS de REPETIÇÃO:
 
-WHILE - teste lógico no início
+WHILE - teste lógico no início.
+
 Enquanto a condição for true, executa:
 
 while (condição) {
@@ -15,6 +16,7 @@ while (condição) {
 Se for false, sai do laço.
 
 Exemplo:
+
 function comerPizza() {
 
 	while(temFatia()){
@@ -23,28 +25,130 @@ function comerPizza() {
 	}	
 }
 
-DO - teste lógico no final
+DO - teste lógico no final.
+
 Faça isso, enquanto a condição for true:
 
 Exemplo:
+
 do {
 
 } while (condição)
 
-ESTRUTURA FOR:
+-----------------------------------------------------
+FOR:
 
-Se o teste for true, executa o bloco.
+Se o teste for TRUE, executa o bloco.
 
 for (inicio; teste; incremento){
-
 	
 }
 
 Após executar é realizado o incremento.
 
-Se o teste for false, sai da estrutura.
+Se o teste for FALSE, sai da estrutura.
  
+Exemplo:
+
+for (var c = 1; c <= 5; c++) {
+    console.log(c)    
+}
+
+OU
+
+var c = 1
+while (c <= 5) {
+    console.log(c)
+    c++
+}
+
+Exemplo:
+
+		HTML:
+<body onload="carregar()">
+    <header>
+        <h1>Contador</h1>
+    </header>
+
+    <section>
+        <div id="dados">
+            <p>Início: <input type="number" name="inicio" id="txtI"></p>
+            
+            <p>Fim: <input type="number" name="fim" id="txtF"></p>
+            
+            <p>Passo: <input type="number" name="passo" id="txtP"></p>
+            
+            <p><input type="button" value="Contar" onclick="contar()"></p>
+        </div>
+        <div id="res">
+            Preparando a contagem...
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy;</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+		JAVASCRIPT:
+function contar() {
+    let inicio = document.getElementById('txtI')
+    let fim = document.getElementById('txtF')
+    let passo = document.getElementById('txtP')
+    let res = document.getElementById('res')
+
+    if (inicio.value.length == 0 || fim.value.length == 0 || passo.value.length == 0) {
+        alert('[ERRO] Dados não inseridos!')
+
+    } else {
+        res.innerHTML = 'Contando: '
+        let i = Number(inicio.value)
+        let f = Number(fim.value)
+        let p = Number(passo.value)
+
+        for (let c = i; c <= f; c += p){
+            res.innerHTML += ` ${c} \u{1F449}`
+        }
+
+        res.innerHTML += ` \u{1F3C1}`
+    }
+}
+
+Contagem Crescente e Decrescente:
+
+if (inicio.value.length == 0 || fim.value.length == 0 || passo.value.length == 0) {
+        alert('[ERRO] Dados não inseridos!')
+
+    } else {
+        res.innerHTML = 'Contando: '
+        let i = Number(inicio.value)
+        let f = Number(fim.value)
+        let p = Number(passo.value)
+
+        if (i < f) {
+            //Contagem Crescente
+            for (let c = i; c <= f; c += p){
+                res.innerHTML += ` ${c} \u{1F449}`
+            }
+
+        } else {
+            //Contagem Decrescente
+            for (let c = i; c >= f; c -= p){
+                res.innerHTML += ` ${c} \u{1F449}`
+            }
+        }
+        res.innerHTML += ` \u{1F3C1}`
+    }
+	
 -----------------------------------------------------
+INSERIR EMOJI:
+
+Código do emoji: U+1F47D
+No JavaScript: \u{1F47D}
+
+-----------------------------------------------------
+
 
 
 
