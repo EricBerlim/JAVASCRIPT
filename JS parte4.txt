@@ -254,4 +254,22 @@ if (pos == -1) {
 } else {
     console.log(`O valor está na posição ${pos}`)   
 }
+
+-----------------------------------------------------
+FUNÇÕES - FUNCTION:
+
+São Ações executadas assim que são Chamadas ou em decorrência de algum Evento.
+
+Pode receber parâmetros e retornar um Resultado.
+
+Toda função pode ter:
+
+- Chamada / ordem
+- Parâmetros / entrada
+- Ação
+- Retorno
+
+
+
+
 -----------------------------------------------------
