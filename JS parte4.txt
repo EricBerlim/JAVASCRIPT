@@ -15,7 +15,6 @@ while (condição) {
 Se for false, sai do laço.
 
 Exemplo:
-
 function comerPizza() {
 
 	while(temFatia()){
@@ -27,19 +26,25 @@ function comerPizza() {
 DO - teste lógico no final
 Faça isso, enquanto a condição for true:
 
+Exemplo:
 do {
 
 } while (condição)
 
+ESTRUTURA FOR:
 
+Se o teste for true, executa o bloco.
 
+for (inicio; teste; incremento){
 
+	
+}
 
+Após executar é realizado o incremento.
 
-
-
+Se o teste for false, sai da estrutura.
+ 
 -----------------------------------------------------
-
 
 
 
