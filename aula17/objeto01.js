@@ -8,3 +8,7 @@ engordar(p=0){
 
 pessoa.engordar(2)
 console.log(`${pessoa.nome} pesa ${pessoa.peso}Kg.`)
+
+const foo = [1,2,3];
+const [n] = foo;
+console.log(n);
